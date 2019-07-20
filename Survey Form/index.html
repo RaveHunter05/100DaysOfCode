@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Potato Form :D</h1>
+
+    <div id="primary">
+        <div>
+            <p id="description">Let us know if you like potatoes</p>
+            <br>
+            <form action="" id="survey-form">
+                <label id="name-label">Name:</label> <input id="name" type="text" placeholder="Enter your name"
+                    required>
+                <label id="email-label">Email:</label> <input id="email" type="email" placeholder="Enter your Email"
+                    required>
+                <label id="number-label">Age:</label> <input id="number" type="number" placeholder="Age" min="5"
+                    max="10">
+                <br>
+                <p>What is your ocupation?</p>
+
+                <select name="ocupation" id="dropdown">
+                    <option value="Student">Student</option>
+                    <option value="fullJob">Full time job</option>
+                    <option value="fullLearner">Full time learner</option>
+                    <option value="noSay">Prefer not to say</option>
+                    <option value="Potato">I'm a potato</option>
+                    <option value="noPotato">I'm not a potato :c</option>
+                </select>
+
+                <div>
+                    <p>Wich is your favorite kind potato dish?</p>
+                    <div>
+                        <input type="radio" name="house" value="asdf" id=""><label for="">Frites</label>
+                        <input type="radio" name="house" value="asdf" id=""><label for="">Mashed potatoes</label>
+                        <input type="radio" name="street" value="asdf" id=""><label for="">Potato chips</label>
+                        <input type="radio" name="street" value="asdf" id=""><label for="">Baked potatoes</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <p>Things that you like about a potato</p>
+                        <p>(Check all that aply)</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="flavour" id="" value="0"> Flavor
+                        <input type="checkbox" name="color" id="" value="0"> Color
+                        <input type="checkbox" name="scent" id="" value="0"> Scent
+                        <input type="checkbox" name="price" id="" value="0"> Price
+                        <input type="checkbox" name="all" id="" value="0"> It goes well with almost everything lol
+                    </div>
+                </div>
+                <div>
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="textoxd" id="" cols="30" rows="10" placeholder="asdfasd"></textarea>
+                </div>
+
+                <button id="submit">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

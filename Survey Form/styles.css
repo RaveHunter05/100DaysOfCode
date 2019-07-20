@@ -1,0 +1,26 @@
+body{
+    background-image:url('https://www.thecookierookie.com/wp-content/uploads/2018/05/twice-baked-potatoes-recipe-6-of-8.jpg');
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    padding:2em 14em 8em 14em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+h1:hover{
+    color:red;
+}
+#primary{
+    
+    background: whitesmoke;
+    border-radius: 5px;
+    padding:2em;
+}
+
+input{
+    margin-bottom: 1em;
+}
+

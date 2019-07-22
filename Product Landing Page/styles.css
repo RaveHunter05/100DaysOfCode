@@ -1,7 +1,11 @@
 * {
-    background: #EEEEEE;
+    
     margin: 0;
     font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: #EEEEEE;
 }
 
 
@@ -245,4 +249,9 @@ li {
     #primerDiv{
         margin-top: 12em;
     }
+}
+
+.freecode{
+    background: #DDDDDD;
+    font-size: 1.1em;
 }

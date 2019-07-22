@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    asdfasdfasfd
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="header">
+        <nav id="nav-bar">
+            <div id="parteIzquierda">
+                <img src="violin.svg" alt="" id="header-img">
+                <p> <a href=""> Original Violins</a></p>
+            </div>
+            <div id="parteDerecha">
+                <li><a class="nav-link" href="#segundoDiv">Features</a></li>
+                <li><a href="#video" class="nav-link">How it Works</a></li>
+                <li><a href="#prices" class="nav-link">Pricing</a></li>
+            </div>
+        </nav>
+    </div>
+
+    <div id="primerDiv">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p class="pad pad1">Handcrafted, home-made masterpieces</p>
+            <input class="pad form" id="email" type="email" name="email" placeholder="Enter your email address" required>
+            <input type="submit" value="GET STARTED" id="submit" class="button">
+        </form>
+    </div>
+
+    <div id="segundoDiv">
+        <div class="features">
+            <div class="icon">
+                <i class="fas fa-fire-alt icono"></i>
+            </div>
+            <div class="textFeature">
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+            </div>
+        </div>
+        <div class="features">
+            <div class="icon">
+                <i class="fas fa-truck icono"></i>
+            </div>
+            <div class="textFeature">
+                <h2>Premium Materials</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia id vero laborum nostrum quo, ab possimus! Quasi repellat illo, suscipit iusto placeat </p>
+            </div>
+        </div>
+        <div class="features">
+            <div class="icon">
+                <i class="fas fa-battery-full icono"></i>
+            </div>
+            <div class="textFeature">
+                <h2>Premium Materials</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia id vero laborum nostrum quo, ab possimus! Quasi repellat illo, suscipit iusto placeat </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="vidio">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/jERzLseoAOM" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="violins" id="prices">
+        <div class="kindViolin">
+            <div class="tituloViolin">
+                Baroque Violins
+            </div>
+            <h2>$600</h2>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum Dolor</p>
+            <p>Lorem Ipsum</p>
+
+            <button class="button">SELECT</button>
+        </div>
+
+        <div class="kindViolin">
+            <div class="tituloViolin">
+                Baroque Violins
+            </div>
+            <h2>$600</h2>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum Dolor</p>
+            <p>Lorem Ipsum</p>
+
+            <button class="button">SELECT</button>
+        </div>
+        <div class="kindViolin">
+            <div class="tituloViolin">
+                Baroque Violins
+            </div>
+            <h2>$600</h2>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum Dolor</p>
+            <p>Lorem Ipsum</p>
+
+            <button class="button">SELECT</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <p>Privacy</p>
+            <p>Terms</p>
+            <p>Contact</p>
+        </div>
+        <div>
+            <span>Copyright 2016, Original Violins</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f6a5d6affa.js"></script>
 </body>
+
 </html>

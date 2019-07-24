@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentation page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="todo">
+        <div class="parteIzquierda">
+            <p>Tutorial</p>
+            <ul>
+                <li>
+                <li>Before We Start the Tutorial</li>
+                <li>What Are We Building?</li>
+                <li>Prerequisites </li>
+                </li>
+                <li>
+                <li>Setup for the Tutorial</li>
+                <li>Option 1: Write Code in the Browser</li>
+                <li>Option 2: Local Development Environment</li>
+                <li>Help, I'm Stuck!</li>
+                </li>
+                <li>
+                <li>Overview</li>
+                <li>What Is React?</li>
+                <li>Inspecting the Starter Code</li>
+                <li>Passing Data Through Props</li>
+                <li>Making an Interactive Component</li>
+                <li>Developer Tools</li>
+                </li>
+                <li>
+                <li>Completing the Game</li>
+                <li>Lifting State Up</li>
+                <li>Why Immutability Is Important</li>
+                <li>Function Components</li>
+                <li>Taking Turns</li>
+                <li>Declaring a Winner</li>
+                </li>
+                <li>
+                <li>Adding Time Travel</li>
+                <li>Storing a History of Moves</li>
+                <li>Lifting State Up, Again</li>
+                <li>Showing the Past Moves</li>
+                <li>Picking a Key</li>
+                <li>Implementing Time Travel</li>
+                <li>Wrapping Up</li>
+                </li>
+            </ul>
+        </div>
+        <div class="parteDerecha">
+            <div>
+                    <h2>Before We Start the Tutorial</h2>
+                    <p>We will build a small game during this tutorial.
+                        You might be tempted to skip it because you’re not building games —
+                        but give it a chance. The techniques you’ll learn in the tutorial are
+                        fundamental to building any React app, and mastering it will give you a
+                        deep understanding of React.</p>
+        
+                    <blockquote>
+                        <p>Tip</p>
+                        <p>This tutorial is designed for people who prefer to learn by doing.
+                            If you prefer learning concepts from the ground up, check out our
+                            step-by-step guide. You might find this tutorial and the guide
+                            complementary to each other.</p>
+                    </blockquote>
+                    <p>The tutorial is divided into several sections:</p>
+                    <li>Setup for the Tutorial will give you a starting point to follow the tutorial.</li>
+                    <li>Overview will teach you the fundamentals of React: components, props, and state.</li>
+                    <li>Completing the Game will teach you the most common techniques in React development.</li>
+                    <li>Adding Time Travel will give you a deeper insight into the unique strengths of React.</li>
+                    <h3>What Are We Building?</h3>
+                    <p>In this tutorial, we’ll show how to build an interactive tic-tac-
+                        toe game with React.</p>
+                    <p>You can see what we’ll be building here: Final Result. If the
+                        code doesn’t make sense to you, or if you are unfamiliar with
+                        the code’s syntax, don’t worry! The goal of this tutorial is to
+                        help you understand React and its syntax.</p>
+                    <p>We recommend that you check out the tic-tac-toe game
+                        before continuing with the tutorial. One of the features
+                        that you’ll notice is that there is a numbered list to the
+                        right of the game’s board. This list gives you a history of
+                        all of the moves that have occurred in the game, and is
+                        updated as the game progresses.</p>
+                    <p>You can close the tic-tac-toe game once you’re familiar with
+                        it. We’ll be starting from a simpler template in this tutorial.
+                        Our next step is to set you up so that you can start building
+                        the game.
+                    </p>
+                    <h3>Prerequisites</h3>
+                    <p>We’ll assume that you have some familiarity with HTML and
+                        JavaScript, but you should be able to follow along even if
+                        you’re coming from a different programming language. We’ll
+                        also assume that you’re familiar with programming concepts
+                        like functions, objects, arrays, and to a lesser extent,
+                        classes.</p>
+                    <p>If you need to review JavaScript, we recommend reading this
+                        guide. Note that we’re also using some features from ES6 —
+                        a recent version of JavaScript. In this tutorial, we’re using
+                        arrow functions, classes, let, and const statements. You can
+                        use the Babel REPL to check what ES6 code compiles to.</p>
+                </div>
+        
+                <hr>
+        
+                <div>
+                    <h2>Setup for the Tutorial</h2>
+                    <p>
+                        There are two ways to complete this tutorial: you can
+                        either write the code in your browser, or you can set
+                        up a local development environment on your computer.
+                    </p>
+        
+                    <h2>Setup Option 1: Write Code in the Browser</h2>
+                    <p>This is the quickest way to get started!</p>
+                    <p>First, open this Starter Code in a new tab. The new
+                        tab should display an empty tic-tac-toe game board
+                        and React code. We will be editing the React code in
+                        this tutorial.</p>
+                    <p>You can now skip the second setup option, and
+                        go to the Overview section to get an overview of React.
+                    </p>
+                    <h2>Setup Option 2: Local Development Environment</h2>
+                    <p>This is completely optional and not required for this
+                        tutorial!</p>
+                    <h2>Optional: Instructions for following along
+                        locally using your preferred text editor</h2>
+                    <p>This setup requires more work but allows you to complete
+                        the tutorial using an editor of your choice. Here are
+                        the steps to follow:</p>
+                    <ol>
+                        <li>Make sure you have a recent version of Node.js installed.</li>
+                        <li>Follow the installation instructions for Create React App
+                            to make a new project.</li>
+        
+                        <div>
+                            <p>npx create-react-app my-app</p>
+                        </div>
+                        <li>Delete all files in the src/ folder of the new project</li>
+                        <blockquote>
+                            <h2>Note:</h2>
+                            <p>Don’t delete the entire src folder, just the original
+                                source files inside it. We’ll replace the default
+                                source files with examples for this project in the
+                                next step.</p>
+                        </blockquote>
+                        <div>
+                            <p>cd my-app</p>
+                            <p>cd src</p>
+                            <br>
+                            <p># If you're using a Mac or Linux:</p>
+                            <p>rm -f *</p>
+                            <br>
+                            <p># Or, if you're on Windows:</p>
+                            <p>del *</p>
+                            <br>
+                            <p># Then, switch back to the project folder</p>
+                            <p>cd ..</p>
+                        </div>
+                        <li>Add a file named index.css in the src/ folder with
+                            this CSS code.</li>
+                        <li>Add a file named index.js in the src/ folder with this JS
+                            code.</li>
+                        <li>Add these three lines to the top of index.js in the src/
+                            folder:</li>
+                        <div>
+                            <p>import React from 'react';</p>
+                            <p>import ReactDOM from 'react-dom';</p>
+                            <p>import './index.css';</p>
+                        </div>
+                    </ol>
+                    <p>Now if you run npm start in the project folder and
+                        open http://localhost:3000 in the browser, you should
+                        see an empty tic-tac-toe field.</p>
+                    <br>
+                    <p>
+                        We recommend following these instructions to configure syntax 
+                        highlighting for your editor.
+                    </p>
+                    <h3>Help, I’m Stuck!</h3>
+                    <p>If you get stuck, check out the community 
+                        support resources. In particular, Reactiflux Chat is 
+                        a great way to get help quickly. If you don’t receive 
+                        an answer, or if you remain stuck, please file an issue, 
+                        and we’ll help you out.</p>
+                    <hr>
+                </div>
+                <div>
+                    <h3>What Is React?</h3>
+                    <p>React is a declarative, efficient, and flexible JavaScript 
+                        library for building user interfaces. It lets you compose 
+                        complex UIs from small and isolated pieces of code called 
+                        “components”.</p>
+                    <p>React has a few different kinds of components, but we’ll start 
+                        with React.Component subclasses:</p>
+                </div>
+                <div>
+        
+                </div>
+                <div>
+        
+                </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

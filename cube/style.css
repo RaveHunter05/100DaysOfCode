@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    letter-spacing: 1px;
+}
+.posicionY{
+    transform: rotate(90deg);
+    height: 100px;
+    width: 100px;
+}
+
+.posicionX{
+    height: 100px;
+    width: 100px;
+}
+
+section{
+    /* align-self: center;
+    justify-self: center; */
+    height: 100px;
+    width: 100px;
+    background:red;
+    border: 1px solid black;
+    position: relative;
+    left:1rem;
+    margin-top: 4rem;
+}
+
+.cuadrado{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius:none;
+}
+
+
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+select{
+    width:6rem;
+}
+
+.hex{
+    margin-top: 1rem;
+    width: 6rem;
+}
+.rombo{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+}
+
+    
+    /* .rombo {
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-color: #F5F5F5 #F5F5F5 red #F5F5F5;
+      position: relative;
+      top: -50px;
+    }
+    .rombo:after {
+      content: '';
+      position: absolute;
+      left: -50px;
+      top: 50px;
+      width: 0;
+      height: 0;
+      border: 50px solid transparent;
+      border-top-color: red;
+    } */
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: white;
+}
+
+header>div{
+    background: #4A4A4A;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 9.7rem;
+}
+
+.forma{
+    display: flex;
+    flex-direction: column;
+}

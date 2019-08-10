@@ -1,3 +1,23 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@media(max-width:672px){
+  .parteDerecha{
+    width: 65%;
+    color:red;
+  }
+}
+
+body{
+  letter-spacing: 1px;
+}
 .todo{
     display:flex;
     flex-direction: row;
@@ -14,6 +34,7 @@
     height: 100%;
     max-height: 1000px;
     position: fixed;
+    background:#F7F7F7;
 }
 .parteDerecha{
     position: absolute;
@@ -46,8 +67,32 @@
     background: #f1f1f1; 
   }
 
-  @media(max-width:672px){
-      .parteDerecha{
-        width: 65%;
-      }
-  }
+ 
+
+  
+
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+li{
+  
+  font-size: 1em;
+}
+
+a:hover{
+  color: blue;
+}
+
+header{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1em 0em 0.5em 0em;
+}
